@@ -11,15 +11,9 @@ public class ArrayMethods{
    }
    public static int columnSum(int[][] ary, int x){
      int sum = 0;
-     int max = 0;
      if (ary.length == 0 || x < 0){
        return 0;
      }
-     /* for (int i = 0; i < ary.length; i++){
-       if (ary[i].length - 1 > max){
-         max = ary[i].length - 1;
-       }
-     } */
      for (int i = 0; i < ary.length; i++){
        if (x < ary[i].length){
          sum += ary[i][x];
@@ -65,5 +59,5 @@ public class ArrayMethods{
     }
     return true;
   }
-
+// Alex Thompson (period 3) helped me with this lab. 
 }
